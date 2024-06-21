@@ -31,7 +31,7 @@ def create_cbz_archive(directory_to_archive, output_directory, filename):
                 zipf.write(file)
 
 
-def create_bulk_cbz(directory_of_directories, output_directory):
+def create_bulk_cbz_archives(directory_of_directories, output_directory):
     """
     Method to allow for bulk processing of many directories into .CBZ archives. File name of the resulting .CBZ archive
     depends on the name of the subdirectory containing the images

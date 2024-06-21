@@ -1,14 +1,14 @@
 from setuptools import setup, find_packages
 
-VERSION = '0.0.1'
+VERSION = '1.0.0'
 DESCRIPTION = 'CBZ archiver'
 LONG_DESCRIPTION = 'Utility for converting images into a CBZ archive individually or in bulk.'
 
 # Setting up
 setup(
     name="cbz_generator",
-    version="0.0.1",
-    author="Tyler Crosby",
+    version="1.0.0",
+    author="Tyler C",
     author_email="contact@tycro.io",
     description="CBZ archiver",
     long_description="Utility for converting images into a CBZ archive individually or in bulk.",
