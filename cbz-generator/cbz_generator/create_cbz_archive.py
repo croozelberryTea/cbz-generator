@@ -24,7 +24,11 @@ def create_cbz_archive(directory_to_archive, output_directory, filename):
 
 
 def test():
-    create_cbz_archive('/Users/tylercrosby/Desktop/testing/source', '/Users/tylercrosby/Desktop/testing/destination', 'test.cbz')
+    source_dir = ''
+    destination_dir = ''
+    file_name = 'test.cbz'
+    create_cbz_archive(source_dir, destination_dir, file_name)
+
 
 if __name__ == '__main__':
     test()
