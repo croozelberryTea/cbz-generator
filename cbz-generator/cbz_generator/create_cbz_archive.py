@@ -23,6 +23,19 @@ def create_cbz_archive(directory_to_archive, output_directory, filename):
                 zipf.write(file)
 
 
+def create_bulk_cbz(directory_of_directories, output_directory):
+    if not os.path.exists(directory_of_directories):
+        raise FileNotFoundError(directory_of_directories)
+
+    if not os.path.exists(output_directory):
+        raise FileNotFoundError(output_directory)
+
+    directories = os.listdir(directory_of_directories)
+    for directory in directories:
+        if os.path.isdir(directory):
+            create_cbz_archive(directory, output_directory, directory + '.cbz')
+
+
 def test():
     source_dir = ''
     destination_dir = ''
